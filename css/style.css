@@ -445,6 +445,7 @@ body {
 .subscribe {
   color: #ffffff;
   background: url("../img/subscribe_bg.jpg") top no-repeat;
+  background-size: cover;
   background-color: #000000;
 }
 
