@@ -280,6 +280,21 @@
       </form>
     </div>
   </div>
+    <script>
+    let modal = document.querySelector('.overlay');
+    let modalOpenBtn = document.querySelector('.user-block__button');
+    let modalCloseBtn = document.querySelector('.popup__close-button');
+    function overlayControl() {
+      if (modal.classList.contains('overlay--close')) {
+        modal.classList.remove('overlay--close');
+      } else {
+        modal.classList.add('overlay--close');
+      }
+    };
+
+    modalOpenBtn.onclick = overlayControl;
+    modalCloseBtn.onclick = overlayControl;
+  </script>
 </body>
 
 </html>
